@@ -1,4 +1,4 @@
-body {
+/* body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
@@ -10,4 +10,99 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+} */
+
+/* General reset for margin and padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(to bottom, #87cefa, #1e90ff);
+  color: #fff;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/* Weather App Container */
+.weather-app {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  padding: 20px;
+  max-width: 400px;
+  width: 90%;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(10px);
+}
+
+/* Location Header */
+.weather-app .location {
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* Date Styling */
+.weather-app .date {
+  font-size: 1em;
+  margin-bottom: 15px;
+  color: #e0f7fa;
+  font-style: italic;
+}
+
+
+/* Weather Icon */
+.weather-app .icon {
+  font-size: 5em;
+  margin: 15px 0;
+}
+
+/* Temperature */
+.weather-app .temperature {
+  font-size: 3em;
+  font-weight: bold;
+}
+
+/* Weather Description */
+.weather-app .description {
+  font-size: 1.2em;
+  font-style: italic;
+  margin: 10px 0;
+}
+
+/* Details Section */
+.weather-app .details {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  font-size: 1em;
+}
+
+/* Detail Items */
+.weather-app .details div {
+  text-align: center;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .weather-app {
+    padding: 15px;
+  }
+  .weather-app .icon {
+    font-size: 4em;
+  }
+  .weather-app .temperature {
+    font-size: 2.5em;
+  }
+  .weather-app .details {
+    flex-direction: column;
+    gap: 10px;
+  }
 }
